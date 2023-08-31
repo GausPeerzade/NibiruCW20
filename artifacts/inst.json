@@ -1,0 +1,16 @@
+{
+    "name": "Custom CW20 token",
+    "symbol": "CWXX",
+    "decimals": 6,
+    "initial_balances": [
+      {
+        "address": "nibi17x2yyfvk29jgkgf0m3lnly4uxead2wplgn6uuy",
+        "amount": "555444000"
+      }
+    ],
+    "mint": { "minter": "nibi17x2yyfvk29jgkgf0m3lnly4uxead2wplgn6uuy" },
+    "marketing": {}
+  }
+
+  // "31577"
+  //F669A78460023634CFCA6D3E6E73684D46002D649328D8BE5D696F2C761CE000

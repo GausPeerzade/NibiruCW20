@@ -1,0 +1,7 @@
+first set the variables like KEY_NAME in terminal 
+then this command --> nibid tx wasm store cw20_base.wasm --from=$KEY_NAME --gas 8000000 --fees 200000unibi
+then save the transaction hash and code id
+use this command and replace the tx hash--> nibid q tx 4FF2EA71F74531295F269E3962AE07840994A9B9074625B1A1B08A624C6C3A9D | grep raw_log
+use this command and replace code id to check smart contract status --> nibid query wasm code-info 787
+use this command and change the variables according to use to instantiate the smart contract --> init='{"name":"UTSA_test","symbol":"UTSA","decimals":6,"initial_balances":[{"address":"nibi1m2mm7kzvw6m3464h94ryqg8xvr6tyeyywa9c6n","amount":"13000000"}],"mint":{"minter":"nibi1m2mm7kzvw6m3464h94ryqg8xvr6tyeyywa9c6n"},"marketing":{}}'
+and finally run this command to instantiate the smart contract ---> nibid tx wasm instantiate 787 $init --label "UTSA cw20_base" --no-admin --from=$KEY_NAME --gas 8000000 --fees 200000unibi -y
